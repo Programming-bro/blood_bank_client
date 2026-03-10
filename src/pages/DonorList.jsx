@@ -69,7 +69,7 @@ const DonorList = () => {
           {filteredDonors.map((donor) => (
             <div
               key={donor.id}
-              className="bg-white p-6 rounded-2xl shadow-md border-t-4 border-red-600 hover:shadow-lg transition"
+              className="bg-white p-6 rounded-2xl shadow-md hover:shadow-lg transition"
             >
               <div className="flex justify-between items-center mb-4">
                 <span className="text-2xl font-black text-red-600">
@@ -95,9 +95,9 @@ const DonorList = () => {
                 </p>
               </div>
 
-              <button className="mt-6 w-full bg-red-600 text-white py-2 rounded-lg font-bold hover:bg-red-700 transition shadow-sm">
+              {/* <button className="mt-6 w-full bg-red-500 text-white py-2 rounded-lg font-bold hover:bg-red-700 transition shadow-sm">
                 Contact Now
-              </button>
+              </button> */}
             </div>
           ))}
         </div>

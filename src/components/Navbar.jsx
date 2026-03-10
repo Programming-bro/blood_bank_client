@@ -58,7 +58,7 @@ const Navbar = () => {
                 {/* User Icon Button */}
                 <button 
                   onClick={() => setIsProfileOpen(!isProfileOpen)}
-                  className="w-10 h-10 bg-red-600 text-white rounded-full flex items-center justify-center font-bold shadow-md hover:bg-red-700 transition-all focus:ring-2 focus:ring-red-300"
+                  className="w-10 h-10 bg-red-600 text-white rounded-full flex items-center justify-center font-bold shadow-md hover:bg-red-500 transition-all focus:ring-2 focus:ring-red-300"
                 >
                   {username[0].toUpperCase()}
                 </button>
@@ -75,7 +75,7 @@ const Navbar = () => {
                       onClick={() => setIsProfileOpen(false)}
                       className="block px-4 py-2 text-sm text-gray-700 hover:bg-red-50 hover:text-red-600 transition"
                     >
-                      👤 My Profile
+                     My Profile
                     </Link>
                     <button 
                       onClick={handleLogout}
@@ -89,7 +89,7 @@ const Navbar = () => {
             ) : (
               <div className="hidden md:flex items-center gap-4">
                 <Link to="/login" className="text-gray-700 font-medium hover:text-red-600">Login</Link>
-                <Link to="/register" className="bg-red-600 text-white px-5 py-2 rounded-full font-bold hover:bg-red-700 shadow-md">Join Now</Link>
+                <Link to="/register" className="bg-red-600 text-white px-5 py-2 rounded-lg font-bold hover:bg-red-700 shadow-md">Register</Link>
               </div>
             )}
 

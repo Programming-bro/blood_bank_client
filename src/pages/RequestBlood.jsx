@@ -121,12 +121,19 @@ const RequestBlood = () => {
                   </span>
                   <span className="text-xs text-gray-400">ID: #{req.id}</span>
                 </div>
-                <h4 className="font-bold text-xl text-gray-800 mb-2">
-                  🏥 {req.hospital_name}
+                <h4 className="font-bold text-lg text-gray-800 mb-2">
+                    {req.hospital_name}
                 </h4>
                 <p className="text-sm text-gray-600">
-                  📞 Contact: {req.contact_no}
+                  Patient Name : {req.patient_name}
                 </p>
+                <p className="text-sm text-gray-600">
+                  Adress:  {req.address}
+                </p>
+                <p className="text-sm text-gray-600">
+                  Date:  {req.created_at}
+                </p>
+
                 <p className="text-gray-700 mt-4 text-sm bg-gray-50 p-3 rounded-lg italic">
                   `{req.details || "No additional details provided."}`
                 </p>
@@ -134,7 +141,7 @@ const RequestBlood = () => {
 
               <button
                 onClick={() => handleAcceptRequest(req.id)}
-                className="mt-6 w-full bg-green-600 text-white py-3 rounded-xl font-bold hover:bg-green-700 transition shadow-md"
+                className="mt-6 w-full bg-green-600 text-white py-3 rounded-lg font-bold hover:bg-green-700 transition shadow-md"
               >
                 Accept Request
               </button>
